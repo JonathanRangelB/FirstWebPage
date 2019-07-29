@@ -74,14 +74,20 @@ figure {
 
 .hero {
     height: 300px;
-    background-image: url('../images/hero.jpg');
+    /* background-image: url('../images/hero.jpg'); */
     /*los .. al inicio hacen que nos regresemos un folder arriba donde esta este css y de ahi entra a la ruta especificada*/
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
     background-color: #1b2127;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.hero-image {
+    object-fit: cover;
 }
 
 .hero h1 strong {
@@ -170,6 +176,7 @@ h2 {
 
 .event-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event {
@@ -274,4 +281,15 @@ h2 {
 
 .form-email h3 {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    /* border: 1px solid red; */
+    display: inherit;
+    justify-content: inherit;
+    height: inherit;
+    align-items: inherit;
+    width: 1506px;
+    margin: 0 auto;
+    flex-wrap: inherit;
 }
