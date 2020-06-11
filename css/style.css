@@ -32,7 +32,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .header ol {
@@ -84,6 +85,7 @@ figure {
     align-items: center;
     justify-content: space-between;
     color: white;
+    flex-wrap: wrap;
 }
 
 .hero-image {
@@ -127,14 +129,19 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project-details {
-    width: 500px
+    width: 50%;
 }
 
 .project-imageContainer {
-    width: 500px
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .project-course,
@@ -163,6 +170,7 @@ h2 {
     color: white;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -180,9 +188,9 @@ h2 {
 }
 
 .event {
-    border: 1px solid white;
-    margin: 10px;
-    width: 480px;
+    /* border: 1px solid white; */
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -227,6 +235,7 @@ h2 {
     height: 150px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social {}
@@ -287,9 +296,97 @@ h2 {
     /* border: 1px solid red; */
     display: inherit;
     justify-content: inherit;
-    height: inherit;
+    max-width: 1000px;
+    flex: 1;
     align-items: inherit;
-    width: 1506px;
+/*     width: 1506px; */
     margin: 0 auto;
     flex-wrap: inherit;
 }
+
+@media screen and (max-width: 1024px){}
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol {
+        display: block;
+    }
+
+    .header ol li {
+        height: 50px;
+    }
+
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project-course, .project-date, .project-url {
+        margin: .5em 0;
+    }
+
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url{
+        font-size: 1em;
+    }
+
+    .project-course{
+        font-size: .7em;
+    }
+
+    .project-date{
+        font-size: 1em;
+    }
+
+    .project-description{
+        font-size: .8em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .project-details{
+        font-size: 12px;
+    }
+
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+}
+@media screen and (max-width: 320px){}
