@@ -278,13 +278,11 @@ h2 {
 
 .form-email button {
     display: block;
-    margin-top: 10px;
     background: transparent;
     color: white;
     padding: 10px 0;
     border-radius: 5px;
     width: 100px;
-    /* margin: 10px auto 0; */
     margin-top: 10px;
 }
 
@@ -293,18 +291,20 @@ h2 {
 }
 
 .container {
-    /* border: 1px solid red; */
     display: inherit;
     justify-content: inherit;
     max-width: 1000px;
     flex: 1;
     align-items: inherit;
-/*     width: 1506px; */
     margin: 0 auto;
     flex-wrap: inherit;
 }
 
-@media screen and (max-width: 1024px){}
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
+}
 @media screen and (max-width: 767px){
     .header{
         display: block;
@@ -387,6 +387,27 @@ h2 {
     .event-detail{
         margin: -2em .5em .5em;
         padding: 1em;
+    }
+
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button {
+        margin: 1em auto;
+    }
+
+    .form-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        padding: 1px;
     }
 }
 @media screen and (max-width: 320px){}
