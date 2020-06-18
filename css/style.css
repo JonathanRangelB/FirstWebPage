@@ -300,6 +300,12 @@ h2 {
     flex-wrap: inherit;
 }
 
+.html-video {
+    width: 100%;
+    /* max-width: 100%; */
+    height: auto;
+}
+
 @media screen and (max-width: 1024px){
     .container{
         padding: 0 1em;
