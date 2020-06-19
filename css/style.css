@@ -450,6 +450,25 @@ h2 {
         text-align: center;
     }
 
+    .menu{
+        position: fixed;
+        background-color: rgba(5, 111, 255, 0.9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+
     .project {
         display: block;
     }
