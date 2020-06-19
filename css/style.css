@@ -152,6 +152,7 @@ figure {
 .portfolio {
     background: #fafafa;
     padding: 20px;
+    padding-top: 0.5em;
 }
 
 h2 {
@@ -399,7 +400,7 @@ h2 {
 
 @media screen and (max-width: 1024px){
     .container{
-        padding: 0 1em;
+        /* padding: 0 1em; */
     }
 
     .hero{
@@ -531,8 +532,11 @@ h2 {
     h1{
         font-size: 1.5em;
     }
+    h2{
+        margin: 5px;
+    }
     .project-details{
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .event-detail{
